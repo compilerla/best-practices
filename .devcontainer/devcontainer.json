@@ -1,0 +1,30 @@
+// For format details, see https://aka.ms/devcontainer.json.
+{
+  "name": "compiler/best-practices",
+
+  "dockerComposeFile": [
+    "compose.yml"
+  ],
+
+  "service": "dev",
+  "runServices": [
+    "dev"
+  ],
+
+  "workspaceFolder": "/workspace/best-practices",
+
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/bin/bash"
+        }
+    }
+  },
+
+  "extensions": [
+      "eamodio.gitlens",
+      "ms-python.python",
+      "ms-python.vscode-pylance"
+  ]
+}

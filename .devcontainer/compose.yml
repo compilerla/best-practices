@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    command: sleep infinity
+    entrypoint: []
+    image: compiler/best-practices:dev
+    volumes:
+      - ..:/workspace/best-practices
