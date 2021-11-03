@@ -21,5 +21,9 @@
     "eamodio.gitlens",
     "ms-python.python",
     "ms-python.vscode-pylance"
+  ],
+  "postCreateCommand": [
+    "/bin/bash",
+    ".devcontainer/postCreate.sh"
   ]
 }
